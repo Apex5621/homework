@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="форма для отправки данных" />
+    <meta name="keywords" content="форма, регистрация, данные" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="./css/normolize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="fieldset-first">
+        <legend class="legend">Ваши личные данные</legend>
+        <label for="name" class="label">Ваше имя</label>
+        <input class="input" type="text" name="name" id="name" placeholder="Имя" required />
+        <label for="age" class="label">Ваш возраст</label>
+        <input class="input" type="number" name="age" id="age" inputmode="numeric" placeholder="Возраст" required />
+        <label for="phone" class="label">Ваш номер телефона</label>
+        <input class="input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required />
+        <label for="email" class="label">Ваша почта</label>
+        <input class="input" type="email" name="email" id="email" placeholder="Почта" required />
+      </fieldset>
+      <fieldset class="fieldset-second">
+        <label class="label">
+          <span class="message">Сообщение</span>
+          <textarea name="message" id="text-area" class="text-area" placeholder="Ваше сообщение" required></textarea>
+        </label>
+        <label for="rules" class="checkbox-label">
+          <input class="checkbox" type="checkbox" name="rules" id="rules" required />
+          <span>Я принимаю правила</span>
+        </label>
+      </fieldset>
+      <button type="submit" class="submit">Отправить</button>
+    </form>
+  </body>
+</html>
