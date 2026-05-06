@@ -1,0 +1,134 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 106px;
+  width: 100%;
+  height: 48px;
+  background: url('../images/decor-large-icon.svg') repeat-x;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero h1 {
+  margin-bottom: 40px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero h1 strong {
+  font-weight: 600;
+  color: #3596ed;
+}
+
+.hero-info .text {
+  margin-bottom: 140px;
+  max-width: 440px;
+}
+
+.button {
+  display: inline-block;
+  background: #3596ed;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.hero-images {
+  display: flex;
+  position: relative;
+}
+
+.hero-choose {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #535755;
+  padding: 22px;
+  max-width: 161px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.news-container {
+  display: flex;
+  gap: 28px;
+}
+
+.news-article {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+  max-width: 284px;
+  overflow: hidden;
+}
+
+.news-article img {
+  display: block;
+}
+
+.news-info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+
+.news-info h3 {
+  color: #2c332f;
+}
+
+.news-date {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.news-article footer {
+  padding: 0 20px 20px;
+  margin-top: auto;
+}
+
+.news-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+}
+
+.news-link::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow-right-icon.svg");
+  width: 22px;
+  height: 9px;
+  transition: transform 0.3s;
+}
+
+.news-link:hover::after {
+  transform: translateX(5px);
+}
