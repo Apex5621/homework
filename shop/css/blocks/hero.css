@@ -1,6 +1,6 @@
 .hero {
   /* min-width: 576px; max-width: 1440px; */
-  padding-bottom: clamp(52px, 2.417rem + 2.31vw, 72px);
+  margin-bottom: clamp(52px, 2.417rem + 2.31vw, 72px);
   background-color: var(--section-background);
 }
 
