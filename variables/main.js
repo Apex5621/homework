@@ -30,7 +30,6 @@ const isStudent = true
 
 const age = 25
 const currentYear = 2026
-let x = currentYear - age
-const birthYear = x
+const birthYear = currentYear - age
 
-console.log(`Меня зовут`, firstName, lastName, `, мне`, age, `лет. Я ученик/ученица курса:`, isStudent)
+console.log(`Меня зовут ${firstName} ${lastName}, мне ${age} лет. Я ученик/ученица курса:`, isStudent)
