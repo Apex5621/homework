@@ -19,7 +19,7 @@ if (mod === 0) {
 // 3. Выведите значение discount в консоль.
 // 4. *Дополнительное задание: перепишите задачу на switch-case.
 
-const age = 30
+const age = +prompt('Сколько вам лет?')
 const discount = age < 18 ? 10 : age <= 65 ? 20 : 30
 
 console.log(`Ваша скидка: ${discount}%`)
@@ -38,7 +38,7 @@ console.log(`Ваша скидка: ${discount}%`)
 //     break
 // }
 
-// console.log(discount)
+// console.log(`Ваша скидка: ${discount}%`)
 
 // Задача 3.
 // 1. Объявите переменные username и password.
