@@ -2,25 +2,24 @@
 // Создайте объект person с несколькими свойствами, содержащими информацию о вас. Затем выведите значения этих свойств в консоль.
 
 const person = {
-  firstName: 'Artem',
-  lastName: 'Hramow',
+  firstName: 'Артем',
+  lastName: 'Храмов',
   age: 25,
-  location: 'Russia',
-  hobby: 'Video games',
+  location: 'Россия',
+  hobby: 'видеоигры',
 }
 
-console.log(person)
+console.log(`Привет, меня зовут ${person.firstName}, мне ${person.age} лет, я люблю ${person.hobby}`)
 
 // Задача 2.
 // Создайте функцию isEmpty, которая проверяет является ли переданный объект пустым. Если объект пуст - верните true, в противном случае false.
 //for in no keys
 
 const isEmpty = person => {
-  if (person === undefined) {
-    console.log(true)
-  } else {
-    console.log(false)
+  for(const _ in person) {
+    return false
   }
+  return true
 }
 
 // isEmpty(person)
